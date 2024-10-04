@@ -1,0 +1,147 @@
+
+.food-list {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.food-item {
+  width: calc(33.333% - 20px); 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.food-item img {
+  width: 100%;
+  max-width: 150px; 
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.food-item p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.food-item span {
+  font-size: 16px;
+  color: #555;
+}
+
+.food-item button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.food-item button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .food-item {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .food-item {
+    width: 100%; 
+  }
+}
+
+
+
+
+.edit-food {
+  width: 100%;
+  max-width: 800px; 
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-food .form-group {
+  margin-bottom: 20px;
+}
+
+.edit-food label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.edit-food input[type="text"],
+.edit-food input[type="number"],
+.edit-food textarea,
+.edit-food select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.edit-food textarea {
+  resize: vertical;
+}
+
+.edit-food img {
+  max-width: 200px;
+  border-radius: 8px;
+  margin-top: 10px;
+  display: flex;
+
+}
+
+.edit-food button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-food button:hover {
+  background-color: #218838;
+}
+
+
+
+.toast-container {
+  z-index: 1050;
+}
+
+
+
+@media (max-width: 600px) {
+  .edit-food .form-group {
+      margin-bottom: 15px;
+  }
+}

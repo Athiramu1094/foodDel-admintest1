@@ -1,0 +1,83 @@
+
+.add {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+.add p {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+.add input[type="text"],
+.add input[type="number"],
+.add textarea,
+.add select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.add-image label img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    cursor: pointer;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+.add button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add button:hover {
+    background-color: #218838;
+}
+
+
+.addCategoryPrice {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.addCategory,
+.addPrice {
+    flex: 1;
+}
+
+
+@media (max-width: 600px) {
+    .addCategoryPrice {
+        flex-direction: column;
+    }
+}
