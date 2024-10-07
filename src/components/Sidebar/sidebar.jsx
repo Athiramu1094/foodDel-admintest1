@@ -1,8 +1,16 @@
 import React from 'react';
 import './sidebar.css';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Sidebar = () => {
+  const userLoggedIn = useSelector((state) => state.login.userLoggedIn);
+
+  // Only show the sidebar if the user is logged in
+  if (!userLoggedIn) {
+    return null; // Do not render the sidebar if the user is not logged in
+  }
+
   return (
     <div className='sidebar'>
         <NavLink to="/add-food" className='sidebar-link'>
@@ -30,7 +38,6 @@ const Sidebar = () => {
                 edit_note
             </span>
         </NavLink>
-       
     </div>
   );
 }
